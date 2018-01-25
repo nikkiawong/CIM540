@@ -1,6 +1,6 @@
 # Dog Door App
 
-##The app that opens doors for your dog
+## The app that opens doors for your dog
 
 ![](https://github.com/nikkiawong/CIM540/blob/master/Homework/IMG_0550.JPG)
 
