@@ -1,5 +1,8 @@
 var centerX = 100;
 var centerY = 200;
+var centerA = 50;
+var centerB = 150;
+var centerC = 250;
 
 function setup() {
   // put setup code here
@@ -27,7 +30,7 @@ function draw() {
   //nose
   stroke("#d64646");
   fill("#f2b4b4");
-  ellipse(centerX+80,centerY+65,120,60);
+  ellipse(centerA+130,centerB+115,120,60);
 
   //nostrils
   fill("#d64646");
@@ -43,8 +46,8 @@ function draw() {
   //eye color
   noStroke();
   fill("green");
-  ellipse(centerX+125,centerY+3,25,35);
-  ellipse(centerX+40,centerY+3,25,35);
+  ellipse(centerX+125,centerC-47,25,35);
+  ellipse(centerX+40,centerC-47,25,35);
 
   //pupils
   fill("black");
