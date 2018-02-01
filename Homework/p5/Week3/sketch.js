@@ -2,10 +2,38 @@ var centerX = 100;
 var centerY = 200;
 var backgroundColor = "white";
 
+var button;
+var button2;
+
+var noseColor = "black";
+
+var sel;
+var eyeColor = "black";
+
 function setup() {
   // put setup code here
   createCanvas(400,400);
   background(255);
+  button = createButton("Click Me");
+  button.mousePressed(changeBG);
+  button2 = createButton("Red");
+  button2.mousePressed(function(){
+
+    //your code goes here
+    noseColor = "red";
+
+  });
+
+  sel = createSelect();
+  sel.option("blue");
+  sel.option("green");
+  sel.option("brown");
+
+  sel.changed(function(){
+
+    eyeColor = sel.value();
+
+  });
 }
 
 function draw() {
@@ -22,13 +50,15 @@ function draw() {
   //eye1
   //var varName = map(variable input, range, range, movement range);
   var xOffset = map(mouseX, 0, width, -20,20);
-  console.log("xOffset: " + xOffset);
   var yOffset = map(mouseY, 0, height, -20,20);
-  console.log("yOffset: " + yOffset);
-  ellipse(centerX -100 + xOffset,centerY -50 + yOffset,50,50);
+  console.log("xOffset: " + xOffset + " yOffset: " + yOffset);
+  fill(eyeColor);
+  ellipse(centerX -100 + xOffset,centerY -50 + yOffset,50 + xOffset,50);
+  fill("white");
   rect(centerX +25,centerY -100,100,100);
   //eye2
-  ellipse(centerX +75 + xOffset,centerY -50 + yOffset,50,75);
+  fill(eyeColor);
+  ellipse(centerX +75 + xOffset,centerY -50 + yOffset,50 + xOffset,75);
 
   stroke(125);
   strokeWeight(5);
@@ -38,7 +68,7 @@ function draw() {
   line(centerX -50,centerY +50,centerX +50,centerY +50);
 
   noStroke();
-  fill(0,0,255);
+  fill(noseColor);
   triangle(centerX,centerY,centerX +25,centerY +25,centerX -25,centerY +25);
 
 }
@@ -49,4 +79,8 @@ function mousePressed() {
 
 function mouseReleased() {
   backgroundColor = "red";
+}
+
+function changeBG(){
+  noseColor = "green";
 }
