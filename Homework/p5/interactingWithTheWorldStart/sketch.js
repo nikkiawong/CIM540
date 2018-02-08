@@ -1,7 +1,10 @@
 var centerX = 250;
 var centerY = 250;
-function preload() {
 
+var carnival;
+
+function preload() {
+  carnival = loadImage("assets/carnival.jpg");
 }
 
 function setup() {
@@ -10,9 +13,11 @@ function setup() {
 }
 
 function draw() {
+  background(255);
+  image(carnival,0,0);
 
   fill(255, 255, 255);
-  
+
   strokeWeight(1);
   //face
   ellipse(centerX, centerY, 100, 100);
