@@ -2,19 +2,34 @@ var centerX = 250;
 var centerY = 250;
 
 var carnival;
+var party;
+var bgImage;
+var carnivalButton;
+var partyButton;
 
 function preload() {
   carnival = loadImage("assets/carnival.jpg");
+  party = loadImage("assets/party.jpg");
 }
 
 function setup() {
     createCanvas(500, 500);
-
+    bgImage = carnival;
+    carnivalButton = createButton("Going to Carnival");
+    carnivalButton.position(10,10);
+    carnivalButton.mousePressed(function(){
+      bgImage = carnival;
+    });
+    partyButton = createButton("Party");
+    partyButton.position(120,10);
+    partyButton.mousePressed(function(){
+      bgImage = party;
+    });
 }
 
 function draw() {
   background(255);
-  image(carnival,0,0);
+  image(bgImage,0,0);
 
   fill(255, 255, 255);
 
@@ -33,7 +48,16 @@ function draw() {
   noFill();
   strokeWeight(4);
   arc(centerX, centerY, 100, 100, 0, PI);
+
+  if(mouseX < width/2){
+    console.log("left side of screen");
+    stroke("purple");
+  }
+
+  if(mouseX > width/2){
+    console.log("right side of screen");
+    stroke("blue");
+  }
   strokeWeight(30);
   arc(centerX, centerY, 100, 100, PI, TWO_PI);
-
 }
