@@ -4,6 +4,10 @@ var centerA = 50;
 var centerB = 150;
 var centerC = 250;
 
+var eyeColor = "green";
+
+
+
 function setup() {
   // put setup code here
   createCanvas(400,400);
@@ -38,6 +42,9 @@ function draw() {
   ellipse(centerX+98,centerY+65,25,40)
 
   //eyes
+  var xOffset = map(mouseX, 0, width, -1,1);
+  var yOffset = map(mouseY, 0, height, -3,0);
+  console.log("xOffset: " + xOffset + " yOffset: " + yOffset);
   stroke("black");
   fill("white");
   ellipse(centerX+125,centerY-5,40,50);
@@ -45,14 +52,14 @@ function draw() {
 
   //eye color
   noStroke();
-  fill("green");
-  ellipse(centerX+125,centerC-47,25,35);
-  ellipse(centerX+40,centerC-47,25,35);
+  fill(eyeColor);
+  ellipse(centerX+125 + xOffset,centerC-47 + yOffset,25,35);
+  ellipse(centerX+40 + xOffset,centerC-47 + yOffset,25,35);
 
   //pupils
   fill("black");
-  ellipse(centerX+125,centerY+8,15,25);
-  ellipse(centerX+40,centerY+8,15,25);
+  ellipse(centerX+125 + xOffset,centerY+8 + yOffset,15,25);
+  ellipse(centerX+40 + xOffset,centerY+8 + yOffset,15,25);
 
   //ears
   stroke(0);
@@ -66,4 +73,16 @@ function draw() {
   ellipse(centerX+5,centerY+35,30,20);
   ellipse(centerX+157,centerY+35,30,20);
 
+}
+
+function mousePressed() {
+  eyeColor = "blue";
+}
+
+function mouseReleased() {
+  eyeColor = "green";
+}
+
+function changeEyeColor (){
+  eyeColor = "blue";
 }
