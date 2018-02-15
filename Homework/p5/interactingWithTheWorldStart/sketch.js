@@ -7,6 +7,10 @@ var bgImage;
 var carnivalButton;
 var partyButton;
 
+var showHide;
+
+var hiding = false;
+
 function preload() {
   carnival = loadImage("assets/carnival.jpg");
   party = loadImage("assets/party.jpg");
@@ -25,12 +29,26 @@ function setup() {
     partyButton.mousePressed(function(){
       bgImage = party;
     });
+
+    showHide = createButton("Show Hide Clown");
+    showHide.position(250,10);
+    showHide.mousePressed(function(){
+
+      if(hiding == false){
+        hiding = true;
+      }else{
+        hiding = false;
+      }
+
+    });
+
 }
 
 function draw() {
   background(255);
   image(bgImage,0,0);
 
+  if(hiding == false){
   fill(255, 255, 255);
 
   strokeWeight(1);
@@ -38,7 +56,7 @@ function draw() {
   ellipse(centerX, centerY, 100, 100);
   //nose
   ellipse(centerX, centerY + 10, 20, 20);
-  //eyse
+  //eyes
   ellipse(centerX - 10, centerY - 10, 10, 20);
   ellipse(centerX + 10, centerY - 10, 10, 20);
   rectMode(CENTER);
@@ -48,6 +66,7 @@ function draw() {
   noFill();
   strokeWeight(4);
   arc(centerX, centerY, 100, 100, 0, PI);
+}
 
   if(mouseX < width/2){
     console.log("left side of screen");
