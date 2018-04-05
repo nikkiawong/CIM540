@@ -4,6 +4,51 @@ var centerY = 381;
 var hitZoneX = 580;
 var hitZoneY = 168;
 
+var hitZoneA = 552;
+var hitZoneB = 210;
+
+var hitZoneC = 612;
+var hitZoneD = 138;
+
+var hitZoneE = 532;
+var hitZoneF = 365;
+
+var hitZoneG = 529;
+var hitZoneH = 390;
+
+var hitZoneI = 515;
+var hitZoneJ = 458;
+
+var hitZoneK = 515;
+var hitZoneL = 478;
+
+var hitZoneM = 508;
+var hitZoneN = 490;
+
+var hitZoneO = 428;
+var hitZoneP = 452;
+
+var hitZoneQ = 372;
+var hitZoneR = 495;
+
+var hitZoneS = 343;
+var hitZoneT = 530;
+
+var hitZoneU = 245;
+var hitZoneV = 515;
+
+var hitZoneW = 170;
+var hitZone1 = 540;
+
+var hitZone2 = 175;
+var hitZone3 = 572;
+
+var hitZone4 = 320;
+var hitZone5 = 534;
+
+var hitZone6 = 158;
+var hitZone7 = 620;
+
 var japan;
 var bgImage;
 //var hitImage;
@@ -12,7 +57,7 @@ var ellipseColorSapporo = "white";
 var ellipseColorHakodate = "white";
 var ellipseColorAsahikawa = "white";
 var ellipseColorYonezawa = "white";
-var ellipseColorKirikata = "white";
+var ellipseColorKitakata = "white";
 var ellipseColorSano = "white";
 var ellipseColorTokyo = "white";
 var ellipseColorYokohama = "white";
@@ -27,7 +72,23 @@ var ellipseColorKagoshima = "white";
 
 function preload() {
   japan = loadImage("assets/3089.png");
-  //hitImage = loadImage("assets/sappororamen.jpg");
+  hitImage = loadImage("assets/sapporoRamen-01.png");
+  hakodateImage = loadImage("assets/hakodateRamen-02.png");
+  asahikawaImage = loadImage("assets/asahikawaRamen-03.png");
+  yonezawaImage = loadImage("assets/yonezawaRamen-04.png");
+  kitakataImage = loadImage("assets/kitakataRamen-05.png");
+  sanoImage = loadImage("assets/sanoRamen-06.png");
+  tokyoImage = loadImage("assets/tokyoRamen-07.png");
+  yokohamaImage = loadImage("assets/yokohamaRamen-08.png");
+  takayamaImage = loadImage("assets/takayamaRamen-09.png");
+  kyotoImage = loadImage("assets/kyotoRamen-10.png");
+  wakayamaImage = loadImage("assets/wakayamaRamen-11.png");
+  hiroshimaImage = loadImage("assets/hiroshimaRamen-12.png");
+  hakataImage = loadImage("assets/hakataRamen-13.png");
+  kumamotoImage = loadImage("assets/kumamotoRamen-14.png");
+  tokushimaImage = loadImage("assets/tokushimaRamen-15.png");
+  kagoshimaImage = loadImage("assets/kagoshimaRamen-16.png");
+  ramenImage = loadImage("assets/ramenKyara-17.png");
 }
 
 function setup() {
@@ -38,6 +99,7 @@ function setup() {
 function draw() {
   background(255);
   image(bgImage,0,0);
+  image(ramenImage, 75, 120);
 
   //sapporo
   fill(ellipseColorSapporo);
@@ -47,6 +109,7 @@ function draw() {
     } else {
         ellipseColorSapporo = "white";
     }
+
 
   //hakodate
   fill(ellipseColorHakodate);
@@ -75,13 +138,13 @@ function draw() {
       ellipseColorYonezawa = "white";
   }
 
-  //kirikata
-  fill(ellipseColorKirikata);
+  //
+  fill(ellipseColorKitakata);
   ellipse(529, 390, 10, 10);
   if (mouseX > 519 && mouseX < 539 && mouseY > 380 && mouseY < 400) {
-      ellipseColorKirikata = "red";
+      ellipseColorKitakata = "red";
   } else {
-      ellipseColorKirikata = "white";
+      ellipseColorKitakata = "white";
   }
 
   //sano
@@ -189,7 +252,7 @@ function draw() {
   text("Hakodate", 562, 214);
   text("Asahikawa", 622, 142);
   text("Yonezawa", 542, 369);
-  text("Kirikata", 539, 394);
+  text("Kitakata", 539, 394);
   text("Sano", 525, 462);
   text("Tokyo", 525, 482);
   text("Yokohama", 518, 494);
@@ -202,13 +265,104 @@ function draw() {
   text("Tokushima", 326, 545);
   text("Kagoshima", 168, 624);
 
-  //var hitZoneDist = dist(mouseX, mouseY, hitZoneX, hitZoneY);
+  var hitZoneDist = dist(mouseX, mouseY, hitZoneX, hitZoneY);
+  var hitZoneDist1 = dist(mouseX, mouseY, hitZoneA, hitZoneB);
+  var hitZoneDist2 = dist(mouseX, mouseY, hitZoneC, hitZoneD);
+  var hitZoneDist3 = dist(mouseX, mouseY, hitZoneE, hitZoneF);
+  var hitZoneDist4 = dist(mouseX, mouseY, hitZoneG, hitZoneH);
+  var hitZoneDist5 = dist(mouseX, mouseY, hitZoneI, hitZoneJ);
+  var hitZoneDist6 = dist(mouseX, mouseY, hitZoneK, hitZoneL);
+  var hitZoneDist7 = dist(mouseX, mouseY, hitZoneM, hitZoneN);
+  var hitZoneDist8 = dist(mouseX, mouseY, hitZoneO, hitZoneP);
+  var hitZoneDist9 = dist(mouseX, mouseY, hitZoneQ, hitZoneR);
+  var hitZoneDist10 = dist(mouseX, mouseY, hitZoneS, hitZoneT);
+  var hitZoneDist11 = dist(mouseX, mouseY, hitZoneU, hitZoneV);
+  var hitZoneDist12 = dist(mouseX, mouseY, hitZoneW, hitZone1);
+  var hitZoneDist13 = dist(mouseX, mouseY, hitZone2, hitZone3);
+  var hitZoneDist14 = dist(mouseX, mouseY, hitZone4, hitZone5);
+  var hitZoneDist15 = dist(mouseX, mouseY, hitZone6, hitZone7);
+
 
   //console.log(hitZoneDist);
 
-  //if (hitZoneDist < 10) {
-    //  image(hitImage, hitZoneX - 100, hitZoneY - 100);
+  if (hitZoneDist < 10) {
+    image(hitImage, 210, 80);
 
-  //}
+  }
+
+  if (hitZoneDist1 < 10) {
+    image(hakodateImage, 188, 80);
+
+  }
+
+    if (hitZoneDist2 < 10) {
+      image(asahikawaImage, 240, 70);
+
+    }
+
+    if (hitZoneDist3 < 10) {
+      image(yonezawaImage, 168, 250);
+
+    }
+
+    if (hitZoneDist4 < 10) {
+      image(kitakataImage, 165, 250);
+
+    }
+
+    if (hitZoneDist5 < 10) {
+      image(sanoImage, 148, 320);
+
+    }
+
+    if (hitZoneDist6 < 10) {
+      image(tokyoImage, 148, 330);
+
+    }
+
+    if (hitZoneDist7 < 10) {
+      image(yokohamaImage, 142, 340);
+
+    }
+
+    if (hitZoneDist8 < 10) {
+      image(takayamaImage, 60, 320);
+
+    }
+
+    if (hitZoneDist9 < 10) {
+      image(kyotoImage, 195, 180);
+
+    }
+
+    if (hitZoneDist10 < 10) {
+      image(wakayamaImage, 165, 215);
+
+    }
+
+    if (hitZoneDist11 < 10) {
+      image(hiroshimaImage, 120, 200);
+
+    }
+
+    if (hitZoneDist12 < 10) {
+      image(hakataImage, 50, 225);
+
+    }
+
+    if (hitZoneDist13 < 10) {
+      image(kumamotoImage, 60, 258);
+
+    }
+
+    if (hitZoneDist14 < 10) {
+      image(tokushimaImage, 165, 215);
+
+    }
+
+    if (hitZoneDist15 < 10) {
+      image(kagoshimaImage, 40, 305);
+
+    }
 
 }
