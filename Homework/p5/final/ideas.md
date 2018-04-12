@@ -11,5 +11,6 @@
 <h3><b>Billboard Live Chart</b></h3>
 <li>Chart keeping track of songs' popularity rankings in real-time</li>
 <li>Based on official Billboard rankings but also tweet mentions and YouTube streams</li>
+<li>Inspiration example: <a href="https://www.billboard.com/charts/hot-100">Billboard Hot 100</a></li>
 
 <h3><b>Guess The Song Game</b></h3>
