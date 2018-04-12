@@ -3,7 +3,7 @@
 ## Final Ideas
 
 <h3><b>Interactive Piano Game</b></h3>
-<li>abc</li>
+<li>An interactive game where users can play basic melodies and popular songs on a digital piano by using their keyboard</li>
 
 
 <h3><b>Billboard Live Chart</b></h3>
