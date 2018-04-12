@@ -9,4 +9,7 @@
 <li>Similar project example: <a href="https://p5js.org/examples/hello-p5-song.html">Hello p5 Song</a></li>
 
 <h3><b>Billboard Live Chart</b></h3>
+<li>Chart keeping track of songs' popularity rankings in real-time</li>
+<li>Based on official Billboard rankings but also tweet mentions and YouTube streams</li>
+
 <h3><b>Guess The Song Game</b></h3>
