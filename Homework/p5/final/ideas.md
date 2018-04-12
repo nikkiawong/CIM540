@@ -2,6 +2,9 @@
 
 ## Final Ideas
 
-<h1><b>Interactive Piano Game</b></h1>
-<h1><b>Billboard Live Chart</b></h1>
-<h1><b>Guess The Song Game</b></h1>
+<h3><b>Interactive Piano Game</b></h3>
+<li>abc</li>
+
+
+<h3><b>Billboard Live Chart</b></h3>
+<h3><b>Guess The Song Game</b></h3>
