@@ -16,4 +16,4 @@
 <h3><b>Guess The Song Game</b></h3>
 <li>Users will guess the popular song based off of a 5 second clip</li>
 <li>In the end, users receive a score telling them how many they got right</li>
-<li>Inspiration example: <a href="https://www.sporcle.com/games/JasonVoorhees/guess-the-songs-1960-2015"></a></li>
+<li>Inspiration example: <a href="https://www.sporcle.com/games/JasonVoorhees/guess-the-songs-1960-2015">Guess The Songs (1960-2015)</a></li>
