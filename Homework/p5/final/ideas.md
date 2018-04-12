@@ -2,6 +2,6 @@
 
 ## Final Ideas
 
-<b>Interactive Piano Game</b>
-<b>###Billboard Live Chart</b>
-<b>Guess The Song Game</b>
+<h1><b>Interactive Piano Game</b></h1>
+<h1><b>Billboard Live Chart</b></h1>
+<h1><b>Guess The Song Game</b></h1>
