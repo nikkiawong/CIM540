@@ -2,6 +2,6 @@
 
 ## Final Ideas
 
-###Interactive Piano Game
-###Billboard Live Chart
-###Guess The Song Game 
+<b>Interactive Piano Game</b>
+<b>###Billboard Live Chart</b>
+<b>Guess The Song Game</b>
