@@ -38,6 +38,17 @@ function draw() {
   background(255);
   stroke(0);
 
+  textSize(16);
+  fill(200);
+  text("a",50,430);
+  text("s",150,430);
+  text("d",250,430);
+  text("f",350,430);
+  text("j",450,430);
+  text("k",550,430);
+  text("l",650,430);
+  text(";",750,430);
+
   fill(value8);
   rect(10,0,100,400);
   fill(value7);
@@ -60,16 +71,6 @@ function draw() {
   rect(390,0,40,230);
   rect(490,0,40,230);
   rect(590,0,40,230);
-
-  textSize(20);
-  text("C",50,430);
-  text("D",150,430);
-  text("E",250,430);
-  text("F",350,430);
-  text("G",450,430);
-  text("A",550,430);
-  text("B",650,430);
-  text("C",750,430);
 
 }
 
