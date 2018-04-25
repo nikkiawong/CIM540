@@ -2,17 +2,21 @@
 
 ## Interactive Piano Game
 
-##Reasoning/Motivation
+<b>Reasoning/Motivation</b>
 <li>Insert reason here</li>
 
-<b>Inputs</b>
+<p><b>Inputs</b>
 <li>Input 1</li>
+</p>
 
-<b>Outputs</b>
+<p><b>Outputs</b>
 <li>Output 1</li>
+</p>
 
-<b>Target Audience</b>
+<p><b>Target Audience</b>
 <li>Audience 1</li>
+</p>
 
-<b>Display Location</b>
+<p><b>Display Location</b>
 <li>Location 1</li>
+</p>
