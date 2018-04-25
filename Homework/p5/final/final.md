@@ -3,7 +3,7 @@
 ## Interactive Piano Game
 
 <p><b>Reasoning/Motivation</b>
-<li>Insert reason here</li>
+<li>I love listening to music and enjoy playing games where I am able to play my favorite songs. Therefore, I decided to create a game in which users can "play" the piano using their computer keyboards.</li>
 </p>
 
 <p><b>Inputs</b>
@@ -15,9 +15,9 @@
 </p>
 
 <p><b>Target Audience</b>
-<li>Audience 1</li>
+<li>All music lovers interested in trying a piano experience with their computer.</li>
 </p>
 
 <p><b>Display Location</b>
-<li>Location 1</li>
+<li>The web</li>
 </p>
