@@ -7,11 +7,12 @@
 </p>
 
 <p><b>Inputs</b>
-<li>Input 1</li>
+<li>keyTyped</li>
+<li>keyReleased</li>
 </p>
 
 <p><b>Outputs</b>
-<li>Output 1</li>
+<li>playNote</li>
 </p>
 
 <p><b>Target Audience</b>
