@@ -2,7 +2,7 @@
 
 ## Interactive Piano Game
 
-<b>Reasoning/Motivation</b>
+###Reasoning/Motivation
 <li>Insert reason here</li>
 
 <b>Inputs</b>
