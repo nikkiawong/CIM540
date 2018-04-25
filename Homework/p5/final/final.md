@@ -2,8 +2,9 @@
 
 ## Interactive Piano Game
 
-<b>Reasoning/Motivation</b>
+<p><b>Reasoning/Motivation</b>
 <li>Insert reason here</li>
+</p>
 
 <p><b>Inputs</b>
 <li>Input 1</li>
