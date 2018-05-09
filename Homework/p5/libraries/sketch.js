@@ -1,11 +1,14 @@
-var scribble = new Scribble();              // global mode
+var aud
 
 function setup() {
-  // put setup code here
+  aud = createAudio('assets/audio.mp3');
+
+  background(250);
 }
 
 function draw() {
-  // put drawing code here
-  stroke( 255, 0, 0 );
-  scribble.scribbleLine( x1, y1, x2, y2 );
+  createCanvas(2000,1000);
+  background(255);
+
+  aud.showControls();
 }
