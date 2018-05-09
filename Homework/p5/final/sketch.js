@@ -15,7 +15,31 @@ var value13 = 0;
 var notes = [60,61,62, 63,64, 65, 66, 67, 68, 69, 70, 71, 72];
 var trigger = 0;
 
+var doremi;
+var wmyb;
+var songImage;
+var doremiButton;
+var wmybButton;
+
+function preload() {
+  doremi = loadImage("assets/doremi-01.png");
+  wmyb = loadImage("assets/wmyb-02.png");
+  //wmyb.jpg goes here
+}
+
 function setup() {
+  songImage = doremi;
+  doremiButton = createButton("Song 1");
+  doremiButton.position(1010,530);
+  doremiButton.mousePressed(function(){
+    songImage = doremi;
+  });
+  wmybButton = createButton("Song 2");
+  wmybButton.position(1110,530);
+  wmybButton.mousePressed(function(){
+    songImage = wmyb;
+  });
+
   // A triangle oscillator
    osc = new p5.TriOsc();
    // Start silent
@@ -39,55 +63,57 @@ function playNote(note, duration) {
 
 function draw() {
   // put drawing code here
-  createCanvas(1000,600);
-  background(255);
+  createCanvas(2000,600);
+  background(0);
   stroke(0);
+
+  image(songImage, 850,50);
 
   textSize(16);
   fill(200);
-  text("a",50,460);
-  text("s",150,460);
-  text("d",250,460);
-  text("f",350,460);
-  text("j",450,460);
-  text("k",550,460);
-  text("l",650,460);
-  text(";",750,460);
+  text("a",50,470);
+  text("s",150,470);
+  text("d",250,470);
+  text("f",350,470);
+  text("j",450,470);
+  text("k",550,470);
+  text("l",650,470);
+  text(";",750,470);
 
   textSize(16);
-  text("q", 110,10);
-  text("e", 210,10);
-  text("r", 410,10);
-  text("u", 510,10);
-  text("i", 610,10);
+  text("w", 110,20);
+  text("e", 210,20);
+  text("r", 410,20);
+  text("u", 510,20);
+  text("i", 610,20);
 
   fill(value8);
-  rect(10,30,100,400);
+  rect(10,30,100,410);
   fill(value7);
-  rect(110,30,100,400);
+  rect(110,30,100,410);
   fill(value6);
-  rect(210,30,100,400);
+  rect(210,30,100,410);
   fill(value5);
-  rect(310,30,100,400);
+  rect(310,30,100,410);
   fill(value4);
-  rect(410,30,100,400);
+  rect(410,30,100,410);
   fill(value3);
-  rect(510,30,100,400);
+  rect(510,30,100,410);
   fill(value2);
-  rect(610,30,100,400);
+  rect(610,30,100,410);
   fill(value1);
-  rect(710,30,100,400);
+  rect(710,30,100,410);
 
   fill(value11);
-  rect(90,30,40,230);
+  rect(90,30,40,240);
   fill(value12);
-  rect(190,30,40,230);
+  rect(190,30,40,240);
   fill(value9);
-  rect(390,30,40,230);
+  rect(390,30,40,240);
   fill(value10);
-  rect(490,30,40,230);
+  rect(490,30,40,240);
   fill(value13);
-  rect(590,30,40,230);
+  rect(590,30,40,240);
 
 }
 
@@ -150,7 +176,7 @@ function keyTyped() {
   }
 
 
-  if (key === 'q') {
+  if (key === 'w') {
     value11 = 100;
     playNote(notes[1]);
   }
