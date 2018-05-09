@@ -1,10 +1,5 @@
 var aud
 var val
-//var euphoria
-
-//function preload() {
-  //euphoria = loadImage("assets/euphoria.jpg");
-//}
 
 function setup() {
   aud = createAudio('assets/audio.mp3');
