@@ -69,6 +69,10 @@ function draw() {
 
   image(songImage, 850,50);
 
+  textSize(20);
+  fill(255);
+  text("Try playing a popular song!",970,25);
+
   textSize(16);
   fill(200);
   text("a",50,470);

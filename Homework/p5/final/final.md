@@ -9,10 +9,12 @@
 <p><b>Inputs</b>
 <li>keyTyped</li>
 <li>keyReleased</li>
+<li>mousePressed</li>
 </p>
 
 <p><b>Outputs</b>
 <li>playNote</li>
+<li>songImage</li>
 </p>
 
 <p><b>Target Audience</b>
